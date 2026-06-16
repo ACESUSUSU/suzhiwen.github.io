@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhiwen Su | FPGA, Robotics, Edge AI</title>
+  <meta name="description" content="Research and engineering notes around FPGA systems, robotics, edge AI, and embodied AI deployment.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f7f3;
+      --text: #181a1b;
+      --muted: #60666c;
+      --line: #d9ded7;
+      --accent: #12635f;
+      --panel: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111416;
+        --text: #f0f3ee;
+        --muted: #aab2ad;
+        --line: #2e3632;
+        --accent: #75c7bc;
+        --panel: #171b1d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    main {
+      width: min(960px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 72px 0 56px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 36px;
+      margin-bottom: 36px;
+    }
+    .eyebrow {
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0 0 12px;
+    }
+    h1 {
+      font-size: clamp(2.4rem, 7vw, 5rem);
+      line-height: 0.95;
+      margin: 0 0 22px;
+      letter-spacing: 0;
+    }
+    .intro {
+      max-width: 720px;
+      font-size: clamp(1.05rem, 2vw, 1.3rem);
+      color: var(--muted);
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin: 28px 0 42px;
+    }
+    section { margin: 0 0 42px; }
+    h2 {
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+    .item {
+      border: 1px solid var(--line);
+      background: color-mix(in srgb, var(--panel) 92%, transparent);
+      border-radius: 8px;
+      padding: 18px;
+      min-height: 136px;
+    }
+    .item h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+    .item p, li { color: var(--muted); }
+    .item p { margin: 0; }
+    ul {
+      display: grid;
+      gap: 8px;
+      padding-left: 20px;
+      margin: 0;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+    .links a {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 13px;
+      text-decoration: none;
+      color: var(--text);
+      background: var(--panel);
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    @media (max-width: 720px) {
+      main { width: min(100% - 28px, 960px); padding-top: 48px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">FPGA Systems · Robotics · Edge AI</p>
+      <h1>Zhiwen Su</h1>
+      <p class="intro">Research and engineering notes around heterogeneous computing, ROS 2 robotics systems, KR260/Kria deployment, and embodied AI runtime experiments.</p>
+      <nav class="links" aria-label="Primary links">
+        <a href="https://github.com/ACESUSUSU">GitHub</a>
+        <a href="https://github.com/ACESUSUSU/AMD-Pervasive-AI-Developer-Contest-Submission-FOLLOWER">FOLLOWER</a>
+        <a href="https://github.com/ACESUSUSU/lerobot_mantis_server">LeRobot Mantis</a>
+        <a href="https://github.com/ACESUSUSU/kria-vitis-platforms">Kria Vitis</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Focus</h2>
+      <ul>
+        <li>FPGA and heterogeneous computing systems</li>
+        <li>ROS 2 robotics middleware and edge deployment</li>
+        <li>KR260 / Kria acceleration experiments</li>
+        <li>Multi-FPGA runtime and reproducible research artifacts</li>
+        <li>VLA / embodied AI systems for real-world robotics</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selected Work</h2>
+      <div class="grid">
+        <article class="item">
+          <h3><a href="https://github.com/ACESUSUSU/AMD-Pervasive-AI-Developer-Contest-Submission-FOLLOWER">FOLLOWER</a></h3>
+          <p>AMD Pervasive AI Developer Contest submission and edge-AI robotics prototype.</p>
+        </article>
+        <article class="item">
+          <h3><a href="https://github.com/ACESUSUSU/lerobot_mantis_server">LeRobot Mantis Server</a></h3>
+          <p>Experimental fork for training and inference workflows around robotics learning systems.</p>
+        </article>
+        <article class="item">
+          <h3><a href="https://github.com/ACESUSUSU/kria-vitis-platforms">Kria Vitis Platforms</a></h3>
+          <p>Reference fork for KR260/Kria FPGA platform experiments.</p>
+        </article>
+        <article class="item">
+          <h3>Private Research Artifacts</h3>
+          <p>FPT Track-B and FPGA/VLA runtime materials are kept private while experiments and submission boundaries are finalized.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      Public repositories are being cleaned up into a clearer research portfolio with reproducible setup notes, project pages, and artifact boundaries.
+    </footer>
+  </main>
+</body>
+</html>
