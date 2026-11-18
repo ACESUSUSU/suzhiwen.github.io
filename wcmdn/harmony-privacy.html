@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>明天再看 HarmonyOS 版隐私政策</title>
+  <style>
+    :root {
+      color: #2d2a25;
+      background: #f7f4ee;
+      font-family: -apple-system, BlinkMacSystemFont, "HarmonyOS Sans SC", "Noto Sans CJK SC", sans-serif;
+      line-height: 1.7;
+    }
+    body {
+      margin: 0;
+      background: #f7f4ee;
+    }
+    .main {
+      box-sizing: border-box;
+      width: min(100%, 760px);
+      margin: 0 auto;
+      padding: 28px 20px 48px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      line-height: 1.3;
+    }
+    h2 {
+      margin: 28px 0 8px;
+      font-size: 1.15rem;
+      line-height: 1.45;
+    }
+    p, li {
+      font-size: 1rem;
+    }
+    p {
+      margin: 8px 0;
+    }
+    ul {
+      margin: 8px 0;
+      padding-left: 1.35rem;
+    }
+    .meta {
+      color: #6e685f;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #8a3f2c;
+      overflow-wrap: anywhere;
+    }
+    code {
+      padding: 0.1em 0.3em;
+      border-radius: 3px;
+      background: #e9e3da;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="main" role="main">
+    <h1>明天再看 HarmonyOS 版隐私政策</h1>
+    <p class="meta">开发者：苏治文</p>
+    <p class="meta">生效日期：2026 年 11 月 17 日 · 更新日期：2026 年 11 月 17 日</p>
+
+    <p>“明天再看”帮助用户主动导入微信公众号文章链接，将解析后的文字保存在本机，以便搜索、分类、阅读、记录笔记和导出 Markdown。本政策说明 HarmonyOS 版本如何处理相关信息。</p>
+
+    <h2>一、处理的信息与用途</h2>
+    <ul>
+      <li><strong>文章链接和文章内容：</strong>当你同意本机数据说明并点击“导入”后，应用会向链接所指向的微信公众号文章页面发起请求，以取得并解析标题、作者、发布时间和正文。应用只接受 <code>mp.weixin.qq.com</code> 的文章链接。</li>
+      <li><strong>本地收藏数据：</strong>文章 URL、标题、作者、发布时间、正文、Markdown、分类、个人笔记、已读/未读状态以及导入、修改时间保存在应用本机沙箱，用于收藏、搜索、分类、阅读、编辑和导出。</li>
+      <li><strong>隐私选择：</strong>你对本机数据说明的同意或拒绝状态保存在本机，用于决定是否启用导入和剪贴板读取。</li>
+      <li><strong>剪贴板文字：</strong>应用不会自动监听或读取剪贴板。只有你点击系统“粘贴”按钮 并获得本次授权后，应用才读取一次剪贴板主要文字，将其放入输入框供你确认。点击粘贴本身不会自动联网。</li>
+      <li><strong>外部交付的链接：</strong>当系统或其他应用把链接交给“明天再看”时，应用会先在本机暂存并展示确认，不会自动抓取；只有你继续点击“导入”后才会联网。</li>
+    </ul>
+
+    <h2>二、网络请求与来源可见信息</h2>
+    <p>在你同意前，本应用不发起文章抓取请求、不读取剪贴板。你可以主动点击“阅读完整隐私政策”，由系统浏览器打开本页；这一操作不会启用文章导入或剪贴板读取。选择“暂不同意”后，导入和剪贴板读取保持关闭。</p>
+    <p>当你主动导入文章或打开原文时，请求会直接发送到文章来源。文章来源的服务器可能看到访问所必需的网络信息，例如你的公网 IP 地址、请求时间、文章 URL 和客户端类型。文章来源如何保存或使用服务器日志，受其自身规则约束，不由本应用控制。</p>
+    <p>本 HarmonyOS 版本不向开发者业务服务器上传本地收藏、文章正文或笔记，也不提供云同步功能。</p>
+
+    <p>你主动打开支持页或本隐私政策时，浏览器会访问由 GitHub Pages 托管的公开网页，网页服务提供方可能处理 IP 地址、访问时间等提供网页所必需的信息。你通过邮箱联系开发者时，会主动向开发者提供邮件地址、邮件内容及你选择附加的材料，用于回复和处理问题；请勿发送与问题无关的敏感信息。</p>
+
+    <h2>三、系统权限与设备能力</h2>
+    <ul>
+      <li><strong>网络访问：</strong>用于在你点击导入后访问微信公众号文章页面，以及在你主动点击时打开支持页、隐私页或原文。</li>
+      <li><strong>剪贴板：</strong>通过系统“粘贴”按钮的单次授权读取，不在后台读取，不持续监听。</li>
+      <li><strong>文件导出：</strong>应用使用系统文档保存界面，由你选择 Markdown 文件的保存位置；应用只写入你确认的目标。</li>
+    </ul>
+    <p>当前版本不请求通讯录、相机、麦克风、精确位置、短信或相册权限。</p>
+
+    <h2>四、共享、第三方服务与自动化决策</h2>
+    <p>当前版本不内置广告、使用行为统计、账号登录、支付或生成式 AI 服务。文章导入直接访问微信公众号文章来源；文件导出由系统文档保存界面处理；支持页和本政策由 GitHub Pages 托管。开发者不出售本地收藏数据，也不为广告画像共享这些数据。</p>
+    <p>当前版本不使用个人信息进行自动化决策或个性化推荐。</p>
+
+    <h2>五、保存、删除与导出</h2>
+    <ul>
+      <li>文章、分类、笔记和阅读状态保存在本机，直到你在应用内删除对应文章，或由系统在卸载应用时处理应用沙箱。</li>
+      <li>应用内删除会移除该文章在本地保存的正文、分类和笔记。删除前会再次确认。</li>
+      <li>Markdown 导出文件由你选择位置并自行管理；删除应用内文章不会自动删除已经导出的文件。</li>
+      <li>文章来源可能保留必要的服务器访问日志，其保存期限和删除方式由文章来源决定。</li>
+    </ul>
+
+    <h2>六、安全措施</h2>
+    <p>应用将本地数据保存在 HarmonyOS 应用沙箱中；网络导入只允许微信公众号文章域名，并限制响应大小和请求等待时间。任何软件都无法保证绝对安全，如发现异常，请停止导入并通过下方邮箱或支持页面联系开发者。</p>
+
+    <h2>七、未成年人</h2>
+    <p>本应用不以收集未成年人个人信息为目的，也不提供账号、社交或付费功能。未成年人应在监护人指导下使用，并避免在个人笔记或剪贴板内容中填写不必要的敏感信息。</p>
+
+    <h2>八、你的选择与权利</h2>
+    <p>你可以拒绝本机数据说明，改为不使用导入和粘贴功能；可以查看、修改分类和笔记、删除本地文章，或导出 Markdown。若对本政策、信息处理或更正请求有疑问，请通过下方邮箱或公开支持页面联系开发者。</p>
+
+    <h2>九、政策更新</h2>
+    <p>若功能、数据处理方式或第三方服务发生变化，本政策会相应更新。重大变化应在应用内或公开页面提供清晰提示，并在需要时重新取得同意。</p>
+
+    <h2>十、联系开发者</h2>
+    <p>开发者：苏治文</p>
+    <p>公开支持页面：<a href="https://acesususu.github.io/suzhiwen.github.io/wcmdn/support">https://acesususu.github.io/suzhiwen.github.io/wcmdn/support</a></p>
+    <p>客服及隐私联系邮箱：<a href="mailto:1090031290@qq.com">1090031290@qq.com</a></p>
+  </div>
+</body>
+</html>
